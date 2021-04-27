@@ -73,7 +73,7 @@ def get_python() -> str:
 
 
 def get_directories() -> Tuple[str, str]:
-    parent_directory = os.path.dirname(os.path.dirname(__file__))
+    parent_directory = os.getcwd()
     dirictori = re.sub(r'lp', '', parent_directory).strip()
     lp_directory = os.path.join(dirictori, "idm_lp")
     return os.path.abspath(dirictori), os.path.abspath(lp_directory)
