@@ -76,7 +76,7 @@ def get_directories() -> Tuple[str, str]:
     parent_directory = os.path.dirname(os.path.dirname(__file__))
     dirictori = re.sub(r'lp', '', parent_directory).strip()
     lp_directory = os.path.join(dirictori, "idm_lp")
-    return os.path.abspath(parent_directory), os.path.abspath(lp_directory)
+    return os.path.abspath(dirictori), os.path.abspath(lp_directory)
 
 
 def git_clone(parent_directory: str, working_directory: str):
