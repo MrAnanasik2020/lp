@@ -2,6 +2,7 @@ import json
 import os
 import sys
 import time
+import re
 from enum import Enum
 from typing import Tuple
 
@@ -73,7 +74,8 @@ def get_python() -> str:
 
 def get_directories() -> Tuple[str, str]:
     parent_directory = os.path.dirname(os.path.dirname(__file__))
-    lp_directory = os.path.join(parent_directory, "idm_lp")
+    dirictori = re.sub(r'lp', '', parent_directory).strip()
+    lp_directory = os.path.join(dirictori, "idm_lp")
     return os.path.abspath(parent_directory), os.path.abspath(lp_directory)
 
 
@@ -124,7 +126,7 @@ def get_access_token(login: str, password: str, code: str = None) -> str:
 
 def main():
     python_cmd = get_python()
-    print(f"Скрипт написал Люцифер «Ебаный Пидарас» Денница\n")
+    print(f"Скрипт написал Люцифер Денница\n")
 
     system = input(
         "Выберите систему:\n"
