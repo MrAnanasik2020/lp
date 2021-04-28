@@ -160,7 +160,7 @@ def main():
 
     tokens = []
     while len(tokens) != 3:
-        time.sleep(1)
+        time.sleep(5)
         try:
             access_token = get_access_token(login, password)
         except LPSetupException as expt:
