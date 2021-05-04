@@ -191,7 +191,9 @@ def main():
         f"Останавливать скрипт надо командой kill (Номер процесса без скобок)\n"
         f"Так же пропиши команду: rm -r nohup.out для стабильной работы\n\n"
         "Для запуска на Termux пропиши следующие команды:\n"
-        "cd\ncd idm_lp\npython main.py"
+        "cd\ncd idm_lp\npython main.py\n\n"
+        "Так же вы можете купить LP у https://vk.com/merryhalfdarkdemon или https://vk.com/idi___na___xyii\n"
+        "Цена этого удовольствия 30р"
     )
 
 
